@@ -5,7 +5,7 @@
   
   tasks:
   - name: print hello world
-    command: "ip a"
+    command: "id -a"
     register: IP_INFO
 
   - name: print IP info
