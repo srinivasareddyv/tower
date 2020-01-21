@@ -5,5 +5,9 @@
   
   tasks:
   - name: print hello world
+    command: "ip a"
+    register: IP_INFO
+
+  - name: print IP info
     debug:
-        msg: Hello world!
+      msg: "{{ IP_INFO }}"
