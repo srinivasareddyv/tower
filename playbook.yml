@@ -5,7 +5,7 @@
   
   tasks:
   - name: print hello world
-    command: "id -a"
+    command: "ping -c3 yahoo.com"
     register: IP_INFO
 
   - name: print IP info
